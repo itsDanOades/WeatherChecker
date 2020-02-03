@@ -3,7 +3,7 @@
 # Defines the page objects to be instantiated for the test
 module TestWorld
   def weather_checker
-    @weather_checker || PageObjects::WeatherChecker.new
+    @weather_checker ||= PageObjects::WeatherChecker.new
   end
 end
 
