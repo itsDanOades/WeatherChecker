@@ -2,13 +2,10 @@
 Cucumber Automation example project for the Weather Checker site. The test framework is written in Ruby using Cucumber
 and Capybara BDD automatiom frameworks.
 
-Ruby Language Reference - https://www.ruby-lang.org/en/
-
-Ruby Cucumber - https://github.com/cucumber/cucumber-ruby
-
-Capybara automation framework for Selenium - https://github.com/teamcapybara/capybara
-
-SitePrism Page Object Model - https://github.com/site-prism/site_prism
+|Ruby Language Reference   | https://www.ruby-lang.org/en/   |
+|Ruby Cucumber             | https://github.com/cucumber/cucumber-ruby   |
+|Capybara automation framework for Selenium   | https://github.com/teamcapybara/capybara   |
+|SitePrism Page Object Model   |https://github.com/site-prism/site_prism   |
 
 The project can be executed in 2 different ways depending on your local dev environment set up. It has been assumed
 to be run in a Mac OS or Linux environment.
