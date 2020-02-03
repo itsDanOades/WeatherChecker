@@ -47,7 +47,7 @@ Note: The bundle install step will download and install the correct Chromedriver
 bundle exec cucumber -p default -p chrome
 
 # Launch Firefox
-bundle exec cucumber -p default -p chrome
+bundle exec cucumber -p default -p firefox
 ```
 
 ## Run tests using Docker and Selenium Grid
