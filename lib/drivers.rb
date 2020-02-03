@@ -7,13 +7,13 @@ module Drivers
   # Returns webdriver capabilities for chrome browser
   def chrome_capabilities
     Selenium::WebDriver::Remote::Capabilities.chrome(
-      logging_prefs: {browser: 'ALL'},
-      'chromeOptions' => {
-        'args' => %w[--ignore-certificate-errors],
-        'w3c' => false
-      },
-      'acceptSslCerts' => true,
-      'acceptInsecureCerts' => true
+        logging_prefs: {browser: 'ALL'},
+        'chromeOptions' => {
+            'args' => %w[--ignore-certificate-errors],
+            'w3c' => false
+        },
+        'acceptSslCerts' => true,
+        'acceptInsecureCerts' => true
     )
   end
 
@@ -26,8 +26,8 @@ module Drivers
                                        desired_capabilities: chrome_capabilities)
       else
         Capybara::Selenium::Driver.new(app, browser: :remote,
-                                            url: hub_url,
-                                            desired_capabilities: chrome_capabilities)
+                                       url: hub_url,
+                                       desired_capabilities: chrome_capabilities)
       end
     end
   end
@@ -35,11 +35,10 @@ module Drivers
   # Returns webdriver capabilities for firefox browser
   def firefox_capabilities
     Selenium::WebDriver::Remote::Capabilities.firefox(
-      logging_prefs: {browser: 'ALL'},
-      'acceptSslCerts' => true,
-      'acceptInsecureCerts' => true,
-      'native_events' => true,
-      :firefox_profile => Selenium::WebDriver::Firefox::Profile.new
+        logging_prefs: {browser: 'ALL'},
+        'acceptSslCerts' => true,
+        'acceptInsecureCerts' => true,
+        'native_events' => true
     )
   end
 
@@ -48,7 +47,6 @@ module Drivers
     Capybara.register_driver :firefox do |app|
       if ENV['SELENIUM_GRID'] == 'false'
         options = Selenium::WebDriver::Firefox::Options.new
-        options.profile = profile
         Capybara::Selenium::Driver.new(app, browser: :firefox, options: options, desired_capabilities: firefox_capabilities)
       else
         Capybara::Selenium::Driver.new(app, browser: :remote, url: hub_url, desired_capabilities: firefox_capabilities)

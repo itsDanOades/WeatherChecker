@@ -7,7 +7,7 @@ require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'site_prism'
 require 'require_all'
-require 'webdrivers/chromedriver'
+require 'webdrivers'
 
 # Import library and page objects to class path
 project_root = File.expand_path('../../', __dir__)
@@ -15,6 +15,7 @@ require_all File.join(project_root, 'lib/*.rb')
 require_all File.join(project_root, 'page_objects/*.rb')
 
 # Register available Selenium Drivers
+ENV['SELENIUM_GRID'] = 'false' if ENV['SELENIUM_GRID'].nil?
 Drivers.register_selenium_drivers
 
 # Configure Capybara automation framework with default browser and app urls from cucumber.yml config
