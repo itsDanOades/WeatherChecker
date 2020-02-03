@@ -13,7 +13,7 @@ to be run in a Mac OS or Linux environment.
 
 ## Run tests using Ruby and local browser install
 
-Spawn a browser instances on your local dev machine and execute Cucumber tests using Selenium Webdriver executable
+Spawn a browser instance on your local dev machine and execute Cucumber tests using Selenium Webdriver 
 
 ### Prerequisites
 
