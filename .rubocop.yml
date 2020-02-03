@@ -1,0 +1,21 @@
+Lint/AmbiguousRegexpLiteral:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Style/SpaceInsideBlockBraces:
+  Enabled: false
+
+Style/PredicateName:
+  Enabled: false
+
+Style/IndentHash:
+  Enabled: false
+
+Style/SpaceInsideHashLiteralBraces:
+  Enabled: false
+

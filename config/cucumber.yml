@@ -1,0 +1,10 @@
+# Default Env url
+default:  BASE_URL=http://serene-mountain-14043.herokuapp.com
+
+# Available Browser profiles
+chrome:   BROWSER=chrome
+firefox:  BROWSER=firefox
+
+# Execute tests against selenium grid if running
+local:    SELENIUM_GRID=false
+grid:     SELENIUM_GRID=true

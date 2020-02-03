@@ -1,0 +1,21 @@
+version: '3.3'
+services:
+  selenium-hub:
+    image: selenium/hub:3.141.59-vanadium
+    container_name: selenium-hub
+    ports:
+    - "4444:4444"
+  chrome:
+    image: selenium/node-chrome:3.141.59-vanadium
+    depends_on:
+    - selenium-hub
+    environment:
+    - HUB_HOST=selenium-hub
+    - HUB_PORT=4444
+  cucumber:
+    image: cucumber:1.0
+    volumes:
+    - ./:/usr/src/cucumber
+    depends_on:
+    - selenium-hub
+    command: ["/usr/src/cucumber/wait_for_grid.sh"]
