@@ -4,7 +4,7 @@
 
 set -e
 
-cmd="bundle exec cucumber -p default -p grid"
+cmd="bundle exec cucumber -p default -p chrome -p grid"
 count=0
 
 while ! curl -sSL "http://selenium-hub:4444/wd/hub/status" 2>&1 \
