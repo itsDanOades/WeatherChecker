@@ -11,7 +11,7 @@ and Capybara BDD automatiom frameworks.
 The project can be executed in 2 different ways depending on your local dev environment set up. It has been assumed
 to be run in a Mac OS or Linux environment.
 
-## Run tests using Ruby and local Chrome browser
+## Run tests using Ruby and local browser install
 
 Spawn a browser instances on your local dev machine and execute Cucumber tests using Selenium Webdriver executable
 
