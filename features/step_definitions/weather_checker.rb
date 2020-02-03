@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Given 'the weather checker page is loaded' do
   weather_checker.load
   expect(weather_checker).to be_displayed
@@ -16,7 +18,7 @@ Then '{string} error is displayed' do |error|
 end
 
 Then 'weather details display the required mandatory properties' do
-  required_properties = %w(time: temperature: humidity:)
+  required_properties = %w[time: temperature: humidity:]
   required_properties.each do |property|
     expect(weather_checker.weather_details).to have_property(property),
                                                "Expected weather table to contain header '#{property}'"

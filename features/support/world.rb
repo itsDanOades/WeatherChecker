@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Defines the page objects to be instantiated for the test
 module TestWorld
   def weather_checker

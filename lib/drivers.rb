@@ -9,8 +9,8 @@ module Drivers
     Selenium::WebDriver::Remote::Capabilities.chrome(
       logging_prefs: {browser: 'ALL'},
       'chromeOptions' => {
-          'args' => %w(--ignore-certificate-errors),
-          'w3c' => false
+        'args' => %w[--ignore-certificate-errors],
+        'w3c' => false
       },
       'acceptSslCerts' => true,
       'acceptInsecureCerts' => true

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Page Object model for Weather Checker page - instantiated by world.rb
 module PageObjects
   # Page Object section for postcode search container
@@ -29,6 +31,7 @@ module PageObjects
       end
 
       return nil if rows.empty?
+
       rows.first.value.text
     end
   end
