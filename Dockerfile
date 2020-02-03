@@ -1,5 +1,5 @@
 # Use public Ruby base image
-FROM ruby:2.6.5git
+FROM ruby:2.6.5
 
 RUN apt-get update && \
 apt-get -y install --no-install-recommends jq
