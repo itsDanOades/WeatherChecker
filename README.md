@@ -69,7 +69,7 @@ use this approach if you do not want to set up Ruby on your local machine.
 sh ./build_docker.sh
 ```
 
-- Confirm docker cucumber:0.0.1 image was built and tagged successfully in your local docker repo
+- Confirm `docker cucumber:0.0.1` image was built and tagged successfully in your local docker repo
 
 ```
 docker images
