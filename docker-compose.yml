@@ -13,7 +13,7 @@ services:
     - HUB_HOST=selenium-hub
     - HUB_PORT=4444
   cucumber:
-    image: cucumber:1.0
+    image: cucumber:0.0.1
     volumes:
     - ./:/usr/src/cucumber
     depends_on:
