@@ -14,7 +14,7 @@ to be run in a Mac OS or Linux environment.
 ## Set up
 
 ```
-git clone https://cucumber.io/docs/cucumber/mocking-and-stubbing-with-cucumber
+git clone git@github.com:itsDanOades/WeatherChecker.git
 ```
 
 ## Run tests using Ruby and local browser
