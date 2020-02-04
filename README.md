@@ -1,5 +1,5 @@
 # WeatherChecker
-Cucumber Automation example project for the Weather Checker site. The test framework is written in Ruby using Cucumber
+Cucumber automation example project for the Weather Checker site. The test framework is written in Ruby using Cucumber
 and Capybara BDD automation frameworks.
 
 | Framework        | Reference           | 
