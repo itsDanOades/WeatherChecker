@@ -44,7 +44,7 @@ gem install bundler
 bundle install
 ```
 
-Note: The bundle install step will download and install the correct Chromedriver or Geckodriver version for your local browser. If this fails then you will need to ensure your chosen driven driver is available on your system path or follow the Docker solution below.
+Note: The bundle install step will download and install the correct Chromedriver or Geckodriver version for your local browser. If this fails then you will need to ensure your chosen driver is available on your system path or follow the Docker solution below.
 
 ## Run Feature Tests
 ```
