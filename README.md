@@ -1,17 +1,22 @@
 # WeatherChecker
-Cucumber Automation example project for the Weather Checker site. The test framework is written in Ruby using Cucumber
-and Capybara BDD automation frameworks.
+Cucumber automation example project for the Weather Checker site.
 
 | Framework        | Reference           | 
-| ------------- |:-------------:| 
+| ------------- |-------------| 
 | Ruby Cucumber      | https://github.com/cucumber/cucumber-ruby         | 
 | Capybara automation framework for Selenium | https://github.com/teamcapybara/capybara         | 
 | SitePrism Page Object Model | https://github.com/site-prism/site_prism            | 
 
+## Set up
+
 The project can be executed in 2 different ways depending on your local dev environment set up. It has been assumed
 to be run in a Mac OS or Linux environment.
 
-## Run tests using Ruby and local browser install
+```
+git clone git@github.com:itsDanOades/WeatherChecker.git
+```
+
+## Run tests using Ruby and local browser
 
 Spawn a browser instance on your local dev machine and execute Cucumber tests using Selenium Webdriver 
 
@@ -39,7 +44,7 @@ gem install bundler
 bundle install
 ```
 
-Note: The bundle install step will download and install the correct Chromedriver or Geckodriver version for your local browser
+Note: The bundle install step will download and install the correct Chromedriver or Geckodriver version for your local browser. If this fails then you will need to ensure your chosen driver is available on your system path or follow the Docker solution below.
 
 ## Run Feature Tests
 ```
