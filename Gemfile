@@ -10,4 +10,3 @@ gem 'rspec', '3.8.0'
 gem 'rubocop', '>= 0.49.0'
 gem 'site_prism', '3.3'
 gem 'webdrivers', '~> 4.0'
-
